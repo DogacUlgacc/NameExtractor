@@ -14,6 +14,15 @@ import org.jsoup.nodes.Document;
 public class NameExtractorHw {
     public static void main(String[] args) throws Exception {
 
+        
+        /*
+        'en.ner.person' is a pre-trained named-entity recognition (NER) model that is specifically designed to identify persons' names 
+        (i.e., individuals) in English language text.
+        The model is part of the OpenNLP project, which is an open-source library for natural language processing in Java.
+        The en.ner.person model uses machine learning algorithms to identify patterns and features in the input text that are characteristic of person names,
+        and then makes predictions based on these patterns to identify and extract the names from the text.
+        */
+        
         InputStream fileInput = new FileInputStream("C:\\Users\\dogac\\IdeaProjects\\NameExtractorHw\\src\\en-ner-person.bin");
         TokenNameFinderModel finder = new TokenNameFinderModel(fileInput);
         NameFinderME nameFinder = new NameFinderME(finder);
